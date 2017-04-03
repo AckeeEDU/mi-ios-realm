@@ -7,6 +7,8 @@ use_frameworks!
 
 target 'RealmExample' do
 
-    pod 'RealmSwift', '~> 2.4'
+    pod 'RealmSwift'
+    pod 'ReactiveSwift'
+    pod 'ReactiveCocoa'
 
 end

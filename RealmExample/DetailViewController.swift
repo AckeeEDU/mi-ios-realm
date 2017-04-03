@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
+    let viewModel = DetailViewModel()
+    
 
     func configureView() {
         // Update the user interface for the detail item.

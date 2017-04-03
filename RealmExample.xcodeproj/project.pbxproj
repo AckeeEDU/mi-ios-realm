@@ -15,6 +15,8 @@
 		ACEA60181E92BE6A008DBCDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEA60161E92BE6A008DBCDB /* Main.storyboard */; };
 		ACEA601A1E92BE6A008DBCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACEA60191E92BE6A008DBCDB /* Assets.xcassets */; };
 		ACEA601D1E92BE6A008DBCDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEA601B1E92BE6A008DBCDB /* LaunchScreen.storyboard */; };
+		ACEA60251E92C3D6008DBCDB /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA60241E92C3D6008DBCDB /* MasterViewModel.swift */; };
+		ACEA60271E92C3EB008DBCDB /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA60261E92C3EB008DBCDB /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		ACEA60191E92BE6A008DBCDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACEA601C1E92BE6A008DBCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACEA601E1E92BE6A008DBCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACEA60241E92C3D6008DBCDB /* MasterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
+		ACEA60261E92C3EB008DBCDB /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		AD335F2096DDAE7C8A49CA32 /* Pods_RealmExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6A57A5A23ABA8A02FAC909 /* Pods-RealmExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmExample/Pods-RealmExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,8 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				ACEA600D1E92BE69008DBCDB /* AppDelegate.swift */,
+				ACEA60241E92C3D6008DBCDB /* MasterViewModel.swift */,
 				ACEA60121E92BE6A008DBCDB /* MasterViewController.swift */,
 				ACEA60141E92BE6A008DBCDB /* DetailViewController.swift */,
+				ACEA60261E92C3EB008DBCDB /* DetailViewModel.swift */,
 				ACEA60161E92BE6A008DBCDB /* Main.storyboard */,
 				ACEA60191E92BE6A008DBCDB /* Assets.xcassets */,
 				ACEA601B1E92BE6A008DBCDB /* LaunchScreen.storyboard */,
@@ -218,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEA60251E92C3D6008DBCDB /* MasterViewModel.swift in Sources */,
+				ACEA60271E92C3EB008DBCDB /* DetailViewModel.swift in Sources */,
 				ACEA60111E92BE6A008DBCDB /* RealmExample.xcdatamodeld in Sources */,
 				ACEA600E1E92BE69008DBCDB /* AppDelegate.swift in Sources */,
 				ACEA60131E92BE6A008DBCDB /* MasterViewController.swift in Sources */,
@@ -387,6 +395,7 @@
 				ACEA60231E92BE6A008DBCDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

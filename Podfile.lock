@@ -1,17 +1,27 @@
 PODS:
+  - ReactiveCocoa (5.0.1):
+    - ReactiveSwift (~> 1.1)
+  - ReactiveSwift (1.1.1):
+    - Result (~> 3.2)
   - Realm (2.5.0):
     - Realm/Headers (= 2.5.0)
   - Realm/Headers (2.5.0)
   - RealmSwift (2.5.0):
     - Realm (= 2.5.0)
+  - Result (3.2.1)
 
 DEPENDENCIES:
-  - RealmSwift (~> 2.4)
+  - ReactiveCocoa
+  - ReactiveSwift
+  - RealmSwift
 
 SPEC CHECKSUMS:
+  ReactiveCocoa: f577006aa6c7b0b08020109ebaae3b77ada00adc
+  ReactiveSwift: 2489549e3231a6ff68ec99f3d320bb264f10ba0a
   Realm: 62abce501668580092d2be9b6ba7324a3d5f906a
   RealmSwift: 9f1a8f624f2f153410115c2cb7d486be9976565d
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
 
-PODFILE CHECKSUM: f8fd3726ad8979199b118a5016845381e0ab11a1
+PODFILE CHECKSUM: 5b47155135c90372f56ba438f41ccaecc1f4a850
 
 COCOAPODS: 1.2.0
