@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4ED9A880FD8CA654FE98CD49 /* Pods_RealmExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD335F2096DDAE7C8A49CA32 /* Pods_RealmExample.framework */; };
+		AC1575431E93714D007C9E95 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1575421E93714D007C9E95 /* Event.swift */; };
+		AC1575451E9376F5007C9E95 /* ReactiveExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1575441E9376F5007C9E95 /* ReactiveExtensions.swift */; };
 		ACEA600E1E92BE69008DBCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA600D1E92BE69008DBCDB /* AppDelegate.swift */; };
 		ACEA60111E92BE6A008DBCDB /* RealmExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACEA600F1E92BE69008DBCDB /* RealmExample.xcdatamodeld */; };
 		ACEA60131E92BE6A008DBCDB /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA60121E92BE6A008DBCDB /* MasterViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		7AB0A09F786EE65E282BBD3B /* Pods-RealmExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmExample/Pods-RealmExample.debug.xcconfig"; sourceTree = "<group>"; };
+		AC1575421E93714D007C9E95 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AC1575441E9376F5007C9E95 /* ReactiveExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveExtensions.swift; sourceTree = "<group>"; };
 		ACEA600A1E92BE69008DBCDB /* RealmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEA600D1E92BE69008DBCDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACEA60101E92BE69008DBCDB /* RealmExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RealmExample.xcdatamodel; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				ACEA601B1E92BE6A008DBCDB /* LaunchScreen.storyboard */,
 				ACEA601E1E92BE6A008DBCDB /* Info.plist */,
 				ACEA600F1E92BE69008DBCDB /* RealmExample.xcdatamodeld */,
+				AC1575421E93714D007C9E95 /* Event.swift */,
+				AC1575441E9376F5007C9E95 /* ReactiveExtensions.swift */,
 			);
 			path = RealmExample;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 				ACEA60111E92BE6A008DBCDB /* RealmExample.xcdatamodeld in Sources */,
 				ACEA600E1E92BE69008DBCDB /* AppDelegate.swift in Sources */,
 				ACEA60131E92BE6A008DBCDB /* MasterViewController.swift in Sources */,
+				AC1575431E93714D007C9E95 /* Event.swift in Sources */,
+				AC1575451E9376F5007C9E95 /* ReactiveExtensions.swift in Sources */,
 				ACEA60151E92BE6A008DBCDB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

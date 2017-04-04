@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -22,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         splitViewController.delegate = self
 
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+        //WARNING: Delete this
+        Realm.Configuration.defaultConfiguration.deleteRealmIfMigrationNeeded = true
+        
         return true
     }
 

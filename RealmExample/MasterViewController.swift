@@ -8,12 +8,16 @@
 
 import UIKit
 import CoreData
+import RealmSwift
+import ReactiveCocoa
+import ReactiveSwift
 
 class MasterViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     var detailViewController: DetailViewController? = nil
     
     let viewModel = MasterViewModel()
+    var notificationToken: NotificationToken? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,8 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        self.tableView.reactive.reloadData <~ self.viewModel.events.producer.map { _ in }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -63,11 +69,15 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.viewModel.events.value?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        if let event = self.viewModel.events.value?[indexPath.row] {
+            cell.textLabel?.text = "\(event.date.timeIntervalSince1970)"
+        }
         //let event = fetchedResultsController.object(at: indexPath)
         //configureCell(cell, withEvent: event)
         return cell
@@ -80,7 +90,9 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            viewModel.deleteStuff.apply(indexPath.row).start()
+            if let event = self.viewModel.events.value?[indexPath.row] {
+                viewModel.deleteStuff.apply(event.id).start()
+            }
         }
     }
 
